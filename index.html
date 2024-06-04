@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5.3.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
+    <!-- Custum CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Tostify -->
+	<link rel="stylesheet" type="text/css" href="styles/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    <title>Hackaton</title>
+</head>
+<body>
+    
+    <header>
+
+    </header>
+
+    <main>
+                                <!-- start page -->
+        <!-- Register form -->
+        <div class="mt-5" id="main">
+			<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Register</label>
+
+					<input type="email" name="email" placeholder="Email" id="regEmail" required="">
+					<input type="password" name="pass" placeholder="Password" id="regPass" required="">
+		
+					<button onclick=" handleUserRegister()">Register</button>
+				</form>
+			</div>
+
+        <!-- Login form -->
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" id="logEmail" required="">
+					<input type="password" name="password" placeholder="Email" id="logPass" required="">
+					<button onclick="handleUserLogin()">Login</button>
+				</form>
+			</div>
+		</div>
+
+                                <!-- todos page -->
+                                
+        
+        <div class="container" id="todos" style="display: none;">
+            <div class="row text-center">
+                <div class="col border mt-3" id="output"></div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="mt-2" style="background-color: linear-gradient(to bottom, #0f0c29, #302b63, #24243e)">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p id="footer" class="text-center text-white"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custum Js -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
